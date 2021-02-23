@@ -1,0 +1,563 @@
+3@charset "utf-8";
+/* CSS Document */
+
+/* SCROLL */
+::-webkit-scrollbar { width: 10px; }
+/* 스크롤바의 width */
+::-webkit-scrollbar-track { background-color: #f0f0f0; }
+/* 스크롤바의 전체 배경색 */
+::-webkit-scrollbar-thumb { 
+    background: #DC7B52;}
+/* 스크롤바 색 */
+::-webkit-scrollbar-button { display: none; }
+/* 위 아래 버튼 (버튼 없애기를 함) */
+
+
+.container {min-width:1280px;}
+
+.headbutton .menu-wrap {
+  position: fixed;
+  right: 0;
+  z-index: 1001;
+  width: 300px;
+  height: 100%;
+  padding: 40px;
+  background-color: #9c9c9c;
+  box-shadow: 0 0 15px rgba(0,0,0,0.4);
+  transition: all 0.5s cubic-bezier(0.7,0,0.3,1);
+  transform: translate3d(360px,0,0);
+}
+.headbutton .menu-wrap.active {
+  transform: translate3d(0px,0,0);
+}
+
+.headbutton .menu-wrap .menu .icon-list a {
+  position: relative;
+  font-family: "Oswald", "Helvetica Neue", Helvetica, sans-serif;
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+.headbutton .menu-wrap .menu .icon-list a::before {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 2px;
+  top: 80%;
+  transition: all 0.3s ease;
+}
+.headbutton .menu-wrap .menu .icon-list a:hover {
+  color: #fe4059;
+}
+.headbutton .menu-wrap .menu .icon-list a:hover::before {
+  width: 50%;
+  background-color: #fe4059;
+}
+/* Buttons */
+.headbutton .menu-button ,
+.headbutton .close-button {
+  position: fixed;
+  top: 50px;
+  width: 50px;
+  height: 50px;
+  background-color: #fe8c26;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0,0,0,0.4);
+}
+.headbutton .menu-button {
+  right: 0px;
+  z-index: 150;
+background:url(../img/hamburger.png)no-repeat;width: 50px;
+        height: 50px;
+}
+
+
+.headbutton .close-button {
+  left: -50px;
+  z-index: 100;
+	background:url(../img/hamburger_x.png)no-repeat;width: 50px;
+        height: 50px;
+	
+}
+
+
+
+
+/*page 01*/
+.main{height:1080px;}
+
+.main .box{ position:relative; top: 150px; left: 210px;z-index:10; width:1000px; }
+.main .box .text{position: absolute; left: 180px;z-index: 1;top: 525px}
+
+.scroll {position: absolute; width: 24px; height: 24px;top: 50%;left: 50%;margin: 350px 0 0 -12px;  opacity:70%;}
+.scroll .chevron {
+  position: absolute; width: 28px; height: 8px; opacity:0;
+	transform: scale3d(0.5, 0.5, 0.5); animation: move 3s ease-out infinite;
+}
+.scroll .chevron:first-child {
+  animation: move 3s ease-out 1s infinite;
+}
+.scroll .chevron:nth-child(2) {
+  animation: move 3s ease-out 2s infinite;
+}
+
+.scroll .chevron:before,
+.scroll .chevron:after { content: ' ';  position: absolute;  top: 0;  height: 100%; width: 51%;  background:#FF6D0C;}
+
+.scroll .chevron:before { left: 0;  transform: skew(0deg, 30deg);
+}
+.scroll .chevron:after { right: 0;  width: 50%; transform: skew(0deg, -30deg);
+}
+@keyframes move {
+  25% { opacity: 1; }
+  33% { opacity: 1; transform: translateY(30px);}
+  67% { opacity: 1;  transform: translateY(40px);}
+  100% { opacity: 0;  transform: translateY(55px) scale3d(0.5, 0.5, 0.5);}
+}
+
+.scroll .text {display:inline-block; margin-top: 70px; margin-left: -30px;
+	font-family: 'NanumSquareB';
+	font-size: 14px; color: #DC4E0A;  text-transform: uppercase;
+	white-space: nowrap; opacity: .25; animation: pulse 2s linear alternate infinite;
+}
+@keyframes pulse {
+  to { opacity: 1; }
+}
+
+.mainbg{}
+
+#particles-js {
+  margin-top: -700px;
+  height: 100%; width: 100%; opacity: 80%;;z-index: -100;
+}
+
+
+/*page 02*/
+
+.aboutme {height:1080px;}
+.aboutme .aboutbox{margin-top:40px;position:relative;top: 100px;border: 1px solid #fff}
+.aboutme .aboutbox .top {font-size:12px; font-family: 'NanumSquareL'; color:#B15B15;
+	position: absolute;left: 300px; letter-spacing: 10px;opacity: 70%;top: 0
+}
+.aboutme .aboutbox .bottom {font-size:12px; font-family: 'NanumSquareL'; color:#B15B15;
+	position: absolute;left: 1400px; letter-spacing: 10px;bottom: -50px;opacity: 70%
+}
+
+.aboutme .aboutbox .profilebox {display:flex; justify-content: center; align-items: center; height:100%;
+margin-top: 120px;
+}
+.aboutme .profilebox .profile {text-align:center; margin-left: 10px}
+.aboutme .aboutbox .profilebox .profile .simg { }
+.aboutme .aboutbox .profilebox .profile .simg img {}
+
+.aboutme .aboutbox .profilebox .profile .simg + .stit {margin-top:10px;margin-left: 70px}
+.aboutme .aboutbox .profilebox .profile .stit {font-size:50px; font-family: 'NanumSquareB'; color:#38190F;letter-spacing: 3px}
+.aboutme .aboutbox .profilebox .profile .stit + .stxt {margin-top:5px}
+.aboutme .aboutbox .profilebox .profile .stxt {margin-left: 70px;}
+.aboutme .aboutbox .profilebox .profile .stxt > span {font-size:18px; font-family: 'NanumSquareR'; color:#38190F;line-height:1.2}
+
+.aboutme .aboutbox .profilebox .profile + .port_info {margin-left:200px}
+.aboutme .aboutbox .profilebox .port_info { }
+.aboutme .aboutbox .profilebox .port_info .plist{margin-left: 3px}
+
+.aboutme .aboutbox .profilebox .port_info .plist > li .dplist > dt,
+.aboutme .aboutbox .profilebox .port_info .plist > li .dplist > dd {display:inline-block; vertical-align: top}
+
+.aboutme .aboutbox .profilebox .port_info .plist > li .dplist > dt { 
+font-size:18px; color:#1C1C1B; min-width:250px;font-family: 'NanumSquareB';
+}
+.aboutme .aboutbox .profilebox .port_info .plist > li .dplist > dt p::before { 
+content:""; display: inline-block; width: 12px; height:22px; 
+background:url('../img/bar.png') no-repeat 0 0; margin-right:10px;
+}
+
+.aboutme .aboutbox .profilebox .port_info .plist > li + li {margin-top:50px}
+
+
+
+.aboutme .aboutbox .profilebox .port_info .plist > li .dplist > dd {font-size:14px}
+
+.aboutme .aboutbox .profilebox .port_info .plist > li .dplist > dd .ic { }
+.aboutme .aboutbox .profilebox .port_info .plist > li .dplist > dd .ic > li { 
+line-height: 1.7; color:#1C1C1B; overflow: hidden; display: flex; align-items: center;
+justify-content: space-between
+}
+
+.aboutme .aboutbox .profilebox .port_info .plist > li .dplist .ic .pplist li:nth-child(1){
+	font-size:13px; font-family: 'NanumSquareL'; color:#1C1C1B;}
+.aboutme .aboutbox .profilebox .port_info .plist > li .dplist .ic .pplist li:nth-child(3){
+	font-size:13px; font-family: 'NanumSquareL'; color:#1C1C1B;margin-top: 10px
+}
+.aboutme .aboutbox .profilebox .port_info .plist > li .dplist .ic .pplist li:nth-child(2){
+	font-size:14px; font-family: 'NanumSquareR'; color:#1C1C1B;margin-left: 40px; margin-top: -16px}
+.aboutme .aboutbox .profilebox .port_info .plist > li .dplist .ic .pplist li:nth-child(4){
+	font-size:14px; font-family: 'NanumSquareR'; color:#1C1C1B;margin-left: 40px; margin-top: -16px}
+
+
+
+.aboutme .aboutbox .profilebox .port_info .plist > li .dplist > dd .ic > li .skill_txt {}
+.aboutme .aboutbox .profilebox .port_info .plist > li .dplist > dd .ic > li .skill_txt + .progressbar { 
+margin-left:50px
+}
+.aboutme .aboutbox .profilebox .port_info .plist > li .dplist > dd .ic > li .progressbar { 
+position:relative; width:75px; height:8px; border:1px solid #F08372; border-radius: 50px}
+.aboutme .aboutbox .profilebox .port_info .plist > li .dplist > dd .ic > li .progressbar .inner { 
+position:absolute; top:0; left:0; height:100%; background:#F18975; border-radius: 50px
+}
+
+
+
+ 
+/* WEB 페이지 */
+
+.webindex {height:1000px;position: relative}
+.webindex img {position: absolute;top: 250px; left: 320px}
+.webindex .txt {position: absolute;top:300px;right: 320px}
+
+/* 서브웨이  */
+
+.subway {background-color:#159946 ;width:960px ;height:1050px;}
+
+.subway .box{width:1280px; height: 1080px; position: relative; margin-left: 320px;
+}
+.subway .box .top {position: absolute; top: 50px; }
+.subway .box .top p {letter-spacing: 2px;font-size:22px; font-family: 'NanumSquareR'; color:#fff;}
+.subway .box .top span{margin-left: 30px}
+.subway .box .top img {position: absolute;top: 2px;left: 110px}
+
+.subway .box .txt {position: absolute; top: 400px; }
+.subway .box .txt .content{}
+.subway .box .txt .content .contlist > li .inner > dt {
+	font-size:20px; font-family: 'NanumSquareB'; color:#fff; 
+	margin-bottom: 13PX;
+}
+.subway .box .txt .content .contlist > li .inner > dd {
+	font-size:14px; font-family: 'NanumSquareR'; color:#fff;
+	margin-bottom: 36PX;letter-spacing: 1px
+}
+.subway .box .txt .content .contlist > li .inner > dd .contxt {line-height:1.3}
+
+.subway .box .button .btnset {position: absolute; top: 820px;left: 0;z-index: 1000;width:160px;}
+.subway .box .button .btnset.two {position: absolute; top: 820px;margin-left: 200px} 
+
+.subway .box .button .btnset .underlined {
+  color: black;flex: 1;text-decoration: none; background-image: linear-gradient(to right, yellow 0, yellow 100%);
+	background-size: 0 100%; background-repeat: no-repeat; transition: background .5s;
+}
+.subway .box .button .btnset .underlined:hover {
+    background-size: 100% 100%;}
+.subway .box .button .btnset .underlined--offset {
+    background-position: 0 0;
+  }
+
+.subway .box .button .btnset .btn p{font-family: 'NanumSquareB';font-size:20px; color:#000;
+border: 2px solid #fff; border-radius: 50px; padding:10px 20px; 
+}
+.subway .box .button .btnset >.btn {margin-right: 5px}
+
+.subway .box .main img {position: absolute; top: 210px; right: 0}
+
+.subway .btnset .inner .bg{background: #000;opacity: 50%;
+	width: 100%;height: 100%;z-index: -100;top: 0;left: 0;margin: 0;padding: 0;position: absolute;
+}
+
+.subway .btnset.one button {position:fixed; left: 80%;top: 6%;
+width:0; height: 0;  cursor: pointer;
+}
+
+.subway .btnset.one button .leftright{ height: 4px; width: 50px; position: absolute; background-color:#fff; border-radius: 2px;transform: rotate(45deg); transition: all .3s ease-in;
+}
+.subway .btnset.one button .rightleft{
+  height: 4px; width: 50px; position: absolute;  background-color:#fff; border-radius: 2px; transform: rotate(-45deg); transition: all .3s ease-in;
+}
+
+.subway .btnset.one button:hover .leftright{
+  transform: rotate(-45deg);  background-color: #f00;
+}
+.subway .btnset.one button:hover .rightleft{
+  transform: rotate(45deg); background-color:  #f00;
+}
+.subway .btnset.one button .xbox{ width: 50px;height: 50px; margin-top:-22px;}
+
+#lypopweb {position:fixed; top:0; left:0; width:100%; height:100%; z-index:10000; display: none;}
+
+.lypopwebcont {position:absolute; top:50%; left:50%; width:905px; height:950px; margin:-470px 0 0 -400px; z-index:10000;}
+.lypopwebcont .simg { z-index:10000;}
+
+
+.lypopwebcont::-webkit-scrollbar { width: 20px; }
+/* 스크롤바의 width */
+.lypopwebcont::-webkit-scrollbar-thumb { 
+    background: #f00;}
+/* 스크롤바 색 */
+
+
+
+/* 반스 */
+
+.vans{width:100%; height:1080px; background: linear-gradient(90deg, #fff 50%, #d61519 50%);
+}
+
+.vans .box{width:1280px; height: 1080px; position: relative; margin-left: 320px; text-align: right
+
+}
+.vans .box .top {position: absolute; top: 50px;right: 0 }
+.vans .box .top p {letter-spacing: 2px;font-size:22px; font-family: 'NanumSquareR'; color:#fff;}
+.vans .box .top span{margin-left: 30px}
+.vans .box .top img {position: absolute; top: 2px; left: 75px}
+
+.vans .box .txt {position: absolute; top: 350px;right: 0 }
+.vans .box .txt .content{}
+.vans .box .txt .content .contlist > li .inner > dt {
+	font-size:20px; font-family: 'NanumSquareB'; color:#fff; 
+	margin-bottom: 13PX;
+}
+.vans .box .txt .content .contlist > li .inner > dd {
+	font-size:14px; font-family: 'NanumSquareR'; color:#fff;
+	margin-bottom: 36PX;letter-spacing: 1px
+}
+.vans .box .txt .content .contlist > li .inner > dd .contxt {line-height:1.3}
+
+.vans .box .button .btnset {position: absolute; top: 820px;right:0;z-index: 100000}
+.vans .box .button .btnset.one {position: absolute; top: 820px;margin-right: 200px} 
+
+.vans .box .button .btnset .underlined {
+  color: black;flex: 1;text-decoration: none; background-image: linear-gradient(to right, yellow 0, yellow 100%);
+   background-size: 0 100%; background-repeat: no-repeat; transition: background .5s;}
+.vans .box .button .btnset .underlined:hover {
+    background-size: 100% 100%;}
+.vans .box .button .btnset .underlined--offset {
+    background-position: 0 0;
+  }
+
+.vans .box .button .btnset .btn p{font-family: 'NanumSquareB';font-size:20px; color:#000;
+border: 2px solid #fff; border-radius: 50px; padding:10px 20px
+}
+.vans .box .button .btnset >.btn {margin-right: 5px}
+
+.vans .box .main img {position: absolute; top: 230px;left: 0}
+
+
+.vans .btnset .inner .bg{background: #000;opacity: 50%;
+	width: 100%;height: 100%;z-index: -100;top: 0;left: 0;margin: 0;padding: 0;position: absolute;
+}
+
+.vans .btnset.one button {position:fixed; left: 76%;top: 6%;
+width:0; height: 0;  cursor: pointer;
+}
+
+.vans .btnset.one button .leftright{ height: 4px; width: 50px; position: absolute; background-color:#fff; border-radius: 2px;transform: rotate(45deg); transition: all .3s ease-in;
+}
+.vans .btnset.one button .rightleft{
+  height: 4px; width: 50px; position: absolute;  background-color:#fff; border-radius: 2px; transform: rotate(-45deg); transition: all .3s ease-in;
+}
+
+.vans .btnset.one button:hover .leftright{
+  transform: rotate(-45deg);  background-color: #f00;
+}
+.vans .btnset.one button:hover .rightleft{
+  transform: rotate(45deg); background-color:  #f00;
+}
+.vans .btnset.one button .xbox{ width: 50px;height: 50px; margin-top:-22px;}
+
+#lypopweb2 {position:fixed; top:0; left:0; width:100%; height:100%; z-index:9999; display: none}
+
+.lypopweb2cont {position:absolute; top:50%; left:50%; width:905px; height:950px; margin:-470px 0 0 -400px; z-index:100;}
+
+.lypopweb2cont::-webkit-scrollbar { width: 20px; }
+/* 스크롤바의 width */
+.lypopweb2cont::-webkit-scrollbar-thumb { 
+    background: #f00;}
+/* 스크롤바 색 */
+
+
+/* 브랜드  */
+
+.branding {height:1080px; position:relative;}
+
+.branding .top{height: 52px;position: absolute;}
+.branding .top {position: absolute;top: 130px;left: 320px}
+.branding .top p {font-family: 'NanumSquareEB';font-size:28px; color:#f28f68;margin-top: -8px}
+.branding .top span {font-family: 'NanumSquareR';font-size:18px; color:#f28f68;}
+.branding .top hr {display: block;margin-left: -325px; border-top: 1px solid #f28f68 }
+
+.branding .content{	position: absolute; right: 0;top: 400px; }
+
+.branding .content .con {float: left;position: relative ;}
+
+.branding .content .con .overlay{position: absolute;
+	top: 0; bottom: 0;left: 0;right: 0;height: 100%;
+	width: 100%; opacity: 0; transition: .5s ease; 
+}
+.branding .content .con:hover .overlay {
+  opacity: 1;
+}
+.branding .content .con .overlay p{
+	position: absolute;top: 50%;left: 50%;
+	transform: translate(-50%, -50%);
+	font-family: 'NanumSquareEB';font-size:40px; color:#fff;
+}
+.branding .content .con .overlay div p{
+	position: absolute;top: 315px;left: 265px;font-family: 'NanumSquareR';font-size:18px; color:#fff; letter-spacing:1px
+}
+
+/*브랜딩 팝업 */
+
+.branding .content_slider .inner .bg{background: #000;opacity: 50%;
+	width: 100%;height: 100%;z-index: -100;top: 0;left: 0;margin: 0;padding: 0;position: absolute;
+}
+
+
+.branding .content_slider .inner .close {position:fixed; top:7%;right: 15%;
+width:0; height: 0;  cursor: pointer;
+}
+
+.branding .content_slider .inner .close .leftright{ height: 4px; width: 50px; position: absolute; background-color:#fff; border-radius: 2px;transform: rotate(45deg); transition: all .3s ease-in;
+}
+.branding .content_slider .inner .close .rightleft{
+  height: 4px; width: 50px; position: absolute;  background-color:#fff; border-radius: 2px; transform: rotate(-45deg); transition: all .3s ease-in;
+}
+.branding .content_slider .inner .close .xbox{ width: 50px;height: 50px; margin-top:-22px;}
+
+
+#lypopb01 , #lypopb02 , #lypopb03 {position:fixed; top:0; left:0; width:100%; height:100%; z-index:9999; display: none}
+
+.lypopb01cont , .lypopb02cont , .lypopb03cont  {position:absolute; top:2vw;left: 50%; width:1248px; height:884px;  z-index:100; margin:0 0 0 -624px }
+
+.lypopb01cont .swiper-container , .lypopb02cont .swiper-container , .lypopb03cont .swiper-container {
+      width: 1248px; height: 884px;
+}
+
+ .lypopb1cont .swiper-container .swiper-slide , .lypopb2cont .swiper-container .swiper-slide , .lypopb3cont .swiper-container .swiper-slide
+{
+      text-align: center; font-size: 18px;background: #fff;
+	display: -webkit-box; display: -ms-flexbox; display: -webkit-flex; display: flex;
+    -webkit-box-pack: center;-ms-flex-pack: center; -webkit-justify-content: center;
+	 justify-content: center;-webkit-box-align: center;-ms-flex-align: center;
+	 -webkit-align-items: center; align-items: center;
+}
+
+
+
+
+
+
+
+/* 인터렉 */
+.interactive{height:1080px;margin: 0 auto;position: relative;}
+.interactive .intercont{}
+.interactive .intercont .text{position: absolute ;top: 204px;left: 157px;}
+
+.interactive .intercont .topbox{position: absolute ;top: 204px;left:388px;}
+.interactive .intercont .botbox{position: absolute ;top: 589px;left: 0}
+
+.interactive .intercont .box{width:373px;height: 373px;float: left;margin:0 0 13px 13px;
+}
+.interactive .intercont .box.four{margin-left: 0}
+.interactive .intercont .box.one{margin-left: 0}
+
+.interactive .intercont .box .lypop_containor .close{border: 2px solid #f00;}
+
+.interactive .intercont .box .lypop_containor .lypop_cont{}
+
+.interactive .intercont .box .hover-shadow {
+  transition: 0.3s;
+}
+.interactive .intercont .box .lypop{opacity:60%;}
+.interactive .intercont .box:hover{opacity:100%;}
+.interactive .intercont .box .hover-shadow:hover {
+  box-shadow: 4px 6px 10px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* 인터렉 팝업 */
+
+.interactive .intercont .content_slider .inner .bg{background: #000;opacity: 50%;
+	width: 100%;height: 100%;z-index: -100;top: 0;left: 0;margin: 0;padding: 0;position: absolute;
+}
+.interactive .intercont .content_slider .inner .close {position:fixed; top: 45px;right:270px; cursor: pointer;width: 50px
+}
+
+.interactive .intercont .content_slider .inner .close .leftright{ height: 4px; width: 50px; position: absolute; background-color:#fff; border-radius: 2px;transform: rotate(45deg); transition: all .3s ease-in;
+}
+.interactive .intercont .content_slider .inner .close .rightleft{
+  height: 4px; width: 50px; position: absolute;  background-color:#fff; border-radius: 2px; transform: rotate(-45deg); transition: all .3s ease-in;
+}
+.interactive .intercont .content_slider .inner .close .xbox{ width: 50px;height: 50px; margin-top:-22px;}
+.interactive .intercont .content_slider .inner .close:hover .leftright{
+  transform: rotate(-45deg);  background-color: #f00;
+}
+.interactive .intercont .content_slider .inner .close:hover .rightleft{
+  transform: rotate(45deg); background-color:  #f00;
+}
+
+
+#lypop01 , #lypop02 , #lypop05 {position:fixed; top:0; left:0; width:100%; height:100%; z-index:9999; display: none}
+
+.lypop01cont , .lypop02cont , .lypop05cont {position:absolute; top:2vw;left: 50%; width:1248px; height:884px;  z-index:100; margin:0 0 0 -624px }
+
+.lypop01cont .swiper-container , .lypop05cont .swiper-container{
+      width: 1248px; height: 884px;}
+
+.lypop01cont .swiper-container .swiper-slide , .lypop05cont .swiper-container .swiper-slide
+{text-align: center; font-size: 18px;background: #fff;
+	display: -webkit-box; display: -ms-flexbox; display: -webkit-flex; display: flex;
+    -webkit-box-pack: center;-ms-flex-pack: center; -webkit-justify-content: center;
+	 justify-content: center;-webkit-box-align: center;-ms-flex-align: center;
+	 -webkit-align-items: center; align-items: center;
+}
+
+#lypop03 , #lypop04 , #lypop06 {position:fixed; top:0; left:0; width:100%; height:100%; z-index:9999; display: none}
+
+.lypop03cont , .lypop04cont , .lypop06cont {position:absolute; top:140px;left:480px; z-index:100; }
+.lypop03cont .simg , .lypop04cont .simg , .lypop06cont .simg  {background: #fff; width:960px; height: 700px;z-index: -10;text-align: center; border-radius: 5px }
+.lypop03cont .simg img{margin-top: 5px}
+.lypop04cont .simg img{margin-top: 15px}
+.lypop06cont .simg img{margin-top: 18px}
+
+.lypop03cont .poptext , .lypop04cont .poptext ,.lypop06cont .poptext
+{position: absolute;bottom: 30px; right: 40px;text-align: right}
+.lypop03cont .poptext p, .lypop04cont .poptext p , .lypop06cont .poptext p
+{
+	font-size:16px; font-family: 'NanumSquareL'; color:#1C1C1C;line-height: 1.3
+}
+
+
+/* 끝  */
+.end{height:1050px;width: 1280px;margin: 0 auto;position: relative;
+}
+.end .inner{position: absolute ;top: 300px}
+.end .inner .bigimg{position: absolute ;left: 227px}
+
+.end .inner .endtext{position: absolute ;top: 200px; left:870px;
+width: 268px; height: 92px;
+}
+.end .inner .endtext .icon{width: 38px;height: 92px;
+display: inline-block;
+}
+.end .inner .endtext .icon img:nth-child(1){margin-bottom: 25px}
+
+
+.end .inner .endtext .ptext{
+font-family: 'NanumSquareR';font-size:18px; color:#dc765c;left: 62px; top: 0; position: absolute;margin-top: 10px;letter-spacing: 1px
+
+}
+
+.end .inner .endtext .ptext p:nth-child(1){margin-bottom: 33px}
+
+
+
+
+
+
+
+
+
+
+
+

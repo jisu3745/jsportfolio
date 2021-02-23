@@ -1,0 +1,402 @@
+
+/* PC (해상도 1024px)*/
+@media all and (min-width:1024px) { 
+
+
+}
+
+
+
+
+/* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/
+@media all and (min-width:768px) and (max-width:1023px) { 
+
+	.main{margin: 0 auto; }
+	.main .box .logo img{width: 80%; height: 80%; margin-left: -100px}
+	.main .box .text{margin-top: -150px;margin-left: -160px}
+	.main .mainbg{width: 80%; height: 80%;}
+
+	
+	.aboutme{margin:auto; margin-top: -20px; width:100%;}
+	.aboutme .top,.bottom{display: none}
+	.aboutme .profilebox .profile {margin-left: -450px;margin-top: -160px ;}
+	.aboutme .profilebox .profile .simg{margin-top: -10px;margin-left: 300px;}
+	.aboutme .profilebox .profile .simg img{ max-width: 300px; height: auto;display: block;}
+	
+	.aboutme .profilebox .profile .tt{margin-top: -230px; margin-left: 680px;}
+	.aboutme .profilebox .profile .tt .stxt{text-align: left;margin-left: 0}
+	
+	.aboutme .profilebox .port_info .plist{overflow-y: scroll;width: 720px; height: 250px;
+		position: absolute; top: 380px;left: 150px;
+	}
+	
+	
+	
+	.webindex{margin-left: -200px;}
+	.webindex .txt {left: 320px;top: 450px}
+	
+	
+	.subway{background-size:100%;width: auto}
+	.subway .top{margin-left: -260px;margin-top: -100px}
+	.subway .main img{ width:60%; left: -230px;margin-top: -180px }
+
+	.subway .contlist{margin-top: 130px ;margin-left: -50px; width: 900px;}
+	.subway .contlist ul{margin-top: -5px;}
+	.subway .contlist li{margin-top: -15px}
+	.subway .contlist dt{overflow: hidden}
+	.subway .contlist dd{margin-left:130px; margin-top:-30px }
+	
+	.subway .button{position: absolute;left: -250px;width: 100%;}
+	.subway .button .btnset{margin-top: -75px ;margin-left:450px;}
+	.subway .button .btnset.two{z-index: 0}
+	
+	
+	.vans{background:#d61519;width:auto}
+	.vans .top{margin-right: 710px;margin-top: -100px}
+	.vans .main img{width:60%; margin-left:-210px; margin-top: -190px }
+
+	.vans .contlist{margin-top: 130px ;margin-right: 1100px; width: 900px;}
+	.vans .contlist ul{margin-top: -5px;}
+	.vans .contlist li{margin-top: -15px;}
+	.vans .contlist dt{margin-left:700px;text-align: left; color: #000}
+	.vans .contlist dd{margin-left:850px; margin-top:-35px;text-align: left;width: 800px }
+	
+	.vans .button{position: absolute;right: 730px;width: 100%;}
+	.vans .button .btnset{margin-top: -95px ;margin-right:450px;}
+	.vans .button .btnset.two{z-index: 0}
+	
+	
+	.branding{margin:auto; margin-top: -80px; width:100%;height: 2200px;}
+	.branding .top{left: 60px}
+	.branding .content{width: 50%;left: 210px;}
+	.branding .content .con{margin-top: 20px}
+	
+	
+	
+	.interactive{margin:auto; margin-top: -80px; width:100%;height: 2500px;}
+	.interactive .text{margin-top:-70px; margin-left: -120px}
+	
+	.interactive .box img{ width: 60%; height: 60%}
+	.interactive .topbox{margin-left: -190px}
+	.interactive .topbox .box {margin-right: -150px;margin-top: 60px;}	
+	.interactive .botbox{margin-left: 200px}
+	.interactive .botbox .box {margin-right: -150px;margin-top: -60px}
+	
+	
+	.end{left: -20px}
+	.end .bigimg img{margin-top: -150px}
+	.end .endtext{margin-top: 180px;margin-left:-530px}
+	
+	
+	#lypopweb{left: 50px;top: 20px;}
+	#lypopweb .lypopwebcont{overflow-y: scroll}
+	#lypopweb img{width: 80%; height: 80%;z-index: 90}
+	#lypopweb .close{left: 860px;top: 50px;z-index: 100}
+	#lypopweb .bg{margin-left: -50px;margin-top: -20px}
+	
+	
+	
+	#lypopweb2{left: -130px;top: 20px;z-index: 100000}
+	#lypopweb2 .lypopwebcont{overflow-y: scroll}
+	#lypopweb2 img{width: 80%; height: 80%;}
+	#lypopweb2 .close{left: 860px;top: 50px;z-index: 100}
+	#lypopweb2 .bg{margin-left: 130px;margin-top: -20px}
+	
+	
+	
+	#lypopb01 {}
+	#lypopb01 img {width: 60%;
+		}
+	#lypopb01 .lypopb01cont{margin-top: 150px;left: 680px}
+	#lypopb01 .close{top: 130px; right: 120px;}
+	
+	#lypopb02 {}
+	#lypopb02 img {width: 60%;
+		}
+	#lypopb02 .lypopb02cont{margin-top: 150px;left: 680px}
+	#lypopb02 .close{top: 130px; right: 120px;}
+	
+	#lypopb03 {}
+	#lypopb03 img {width: 60%;}
+	#lypopb03 .lypopb03cont{margin-top: 150px;left: 680px}
+	#lypopb03 .close{top: 130px; right: 120px;}
+	
+	
+	#lypop01 {}
+	#lypop01 img {width: 60%;}
+	#lypop01 .lypop01cont{margin-top: 0px;left: 470px}
+	#lypop01 .lypop01cont .swiper-wrapper .swiper-slide{background-color: rgba( 255, 255, 255, 0.1 );}
+	#lypop01 .close{top: 150px; right: 100px;z-index: 100}
+	#lypop01 .bg{width: 100%;height: 100%}
+	
+	#lypop02 {}
+	#lypop02 img {width: 60%;}
+	#lypop02 .lypop02cont{margin-top: 150px;left: 730px}
+	#lypop02 .close{top: 130px; right: 100px;z-index: 100}
+	#lypop02 .bg{width: 100%;height: 100%}
+	
+	#lypop03 {}
+	#lypop03 .lypop03cont .simg {background-size:40%}
+	#lypop03 .lypop03cont .simg img {width: 50%;}
+	#lypop03 .lypop03cont{margin-top: -50px;left: 20px}
+	#lypop03 .close{top: 120px; right: 150px;z-index: 100}
+	#lypop03 .bg{width: 100%;height: 100%}
+	
+	#lypop04 {}
+	#lypop04 .lypop04cont .simg {background-size:40%}
+	#lypop04 .lypop04cont .simg img {width: 50%;}
+	#lypop04 .lypop04cont{margin-top: -50px;left: 20px}
+	#lypop04 .close{top: 120px; right: 150px;z-index: 100}
+	#lypop04 .bg{width: 100%;height: 100%}
+	
+	#lypop05 {}
+	#lypop05 img {width: 50%;}
+	#lypop05 .lypop05cont{margin-top: 0px;left: 470px}
+	#lypop05 .lypop05cont .swiper-wrapper .swiper-slide{background-color: rgba( 255, 255, 255, 0.1 );}
+	#lypop05 .close{top: 150px; right: 100px;z-index: 100}
+	#lypop05 .bg{width: 100%;height: 100%}
+	
+	#lypop06 {}
+	#lypop06 .lypop06cont .simg {background-size:40%}
+	#lypop06 .lypop06cont .simg img {width: 50%;}
+	#lypop06 .lypop06cont{margin-top: -50px;left: 20px}
+	#lypop06 .close{top: 120px; right: 150px;z-index: 100}
+	#lypop06 .bg{width: 100%;height: 100%}
+	
+	
+}
+
+
+
+
+/* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/
+@media all and (max-width:767px) { 
+	
+	::-webkit-scrollbar{display:  none}
+	
+	.headbutton button{ max-width:30px; max-height:30px ;width: auto; height: auto}
+	.headbutton .menu-button {background-size: cover}
+	.headbutton .close-button {background-size: cover}
+	
+	.main{margin: 0 auto;}
+	.main .box .logo img{width: 30%; height: 30%; 
+		margin-left: -190px;}
+	.main .box .text {margin-top: -390px;margin-left: -330px;}
+	.main .box .text img {width:40%}
+	.main .mainbg{width: 80%; height: 80%;}
+	.main .scroll{margin-top: 200px;opacity: 50%;}
+	.main .scroll div {width: 20px;height: 2px;}
+	.main .scroll .text {font-size: 10px;margin-top: 62px;margin-left: -20px;}
+	.main .mainbg{width: 100%; height: 100%;}
+	
+	
+	.aboutme{margin:auto; width:auto;margin-top: -600px;}
+	.aboutme .top,.bottom{display: none}
+	.aboutme .profilebox .profile {margin-left: -720px;margin-top: 0px ;transition: none}
+	.aboutme .profilebox .profile .simg{margin-top: 0px;margin-left: -15px;}
+	.aboutme .profilebox .profile .simg img{ max-width: 150px; height: auto;display: block;}
+	.aboutme .profilebox .profile .tt{margin-top: 20px; margin-left: 0px;}
+	.aboutme .profilebox .profile .tt .stit{font-size:20px}
+	.aboutme .profilebox .profile .tt .stxt{margin-left: 0;}
+	.aboutme .profilebox .profile .tt .stxt > span {font-size:10px;}
+	
+	.aboutme .profilebox .port_info .plist{width: 100%; height: auto;
+		position: absolute; top: 470px;left: 30px;
+	}
+	.aboutme .profilebox .port_info .plist dt {margin-right: -150px;}
+	.aboutme .profilebox .port_info .plist dt p{font-size: 13px}
+	.aboutme .profilebox .port_info .plist li{font-size: 11px}
+	.aboutme .aboutbox .profilebox .port_info .plist > li .dplist > dt::before{ 
+   background-size: contain;width: 5px;height: 10px ;}
+	.aboutme .aboutbox .profilebox .port_info .plist li .dplist .ic .progressbar{left: -30px;}
+	
+	
+	
+	.webindex{margin-left: -260px;margin-top: -50px}
+	.webindex img {width: 10%;height: 10%; top: 350px}
+	.webindex .txt {left: 325px;top: 500px}
+	.webindex .txt p {font-size: 15px}
+	
+	
+	
+	.subway{background-size:100%;width: auto;height: 700px}
+	.subway .top{margin-left: -290px;margin-top: -10px;}
+	.subway .box .top p {font-size: 10px;}
+	.subway .box .top img {margin-left: -47px;margin-top:-5px;width: 5%}
+	
+	.subway .main img{ width:25%; left: -300px;margin-top: -60px }
+
+	.subway .contlist{margin-top: 30px ;margin-left:-260px; width: 900px;}
+	.subway .contlist {margin-top: -5px;}
+	.subway .txt .contlist li{margin-top: -20px;}
+	.subway .box .txt .content .contlist > li .inner > dt {font-size:13px;}
+	.subway .txt .contlist dd ul{margin-left:70px; margin-top:-30px; width: 180px}
+	.subway .box .txt .content .contlist > li .inner > dd {font-size:9px;}
+	
+	.subway .button{position: absolute;left: -310px;top: 0px}
+	.subway .button .btnset{margin-top: -210px; margin-left:50px;
+}
+	.subway .box .button .btnset{width: 100%}
+	.subway .button .btnset.two{z-index: 0;}
+	.subway .button .btnset p {width:130px;text-align: center;margin: -10px;}
+	.subway .box .button .btnset .btn {}
+	.subway .box .button .btnset .btn p {font-size: 15px !important;}
+	.subway .box .button .btnset .underlined {animation: none}
+	
+	
+	.vans{background:#d61519;width:auto;height: 700px}
+	.vans .top{margin-right: 1390px;margin-top: -10px;}
+	.vans .box .top p {font-size: 10px; width: 300px}
+	.vans .box .top img {margin-left: 90px;margin-top:-4px; width:10px}
+	
+	.vans .main img{ width:25%; margin-left:-290px; margin-top: -80px }
+
+	.vans .contlist{margin-top: 50px ;margin-right:1250px; width: 300px; }
+	.vans .contlist {margin-top: -5px;}
+	.vans .txt .contlist li{margin-top: -20px;}
+	.vans .box .txt .content .contlist > li .inner > dt {
+		font-size:13px;text-align: left;
+	}
+	.vans .txt .contlist dd ul {margin-left:100px; margin-top:-30px;}
+	.vans .box .txt .content .contlist > li .inner > dd {font-size:9px;
+		text-align: left;width: 800px 
+	}
+	
+	.vans .button{position: absolute;left: -60px;top: 0px;}
+	.vans .button .btnset{margin-top: -250px; margin-right:50px;
+	}
+	.vans .box .button .btnset{width: 100%}
+	.vans .button .btnset.two{z-index: 0;}
+	.vans .button .btnset p {width:130px;text-align: center;margin: -10px}
+	.vans .box .button .btnset .btn p{font-size: 15px !important;}
+	.vans .box .button .btnset .underlined {animation: none}
+	.vans .box .button .btn.underlined.underlined--offset{animation: none}
+	
+	
+	.branding{margin:auto; margin-top: -30px; width:100%;height: 1800px;}
+	.branding .top{left: 50px}
+	.branding .content{width: 50%;left: 0px;position: relative}
+	.branding .content .con img{width: auto; height: auto; 
+		max-width: 300px; max-height: 300px;}
+	.branding .content .con.one {position: absolute;left: 20px}
+	.branding .content .con.two {position: absolute;top: 330px;left: 20px}
+	.branding .content .con.three {position: absolute;top: 660px;left: 20px}
+	
+	
+	.interactive{margin:auto; margin-top: -80px; width:100%;height: 800px;}
+	.interactive .text{margin-top:-70px; margin-left: -120px;}
+	.interactive .text img {width: 70%}
+	
+	.interactive .box img{ width: 30%; height:30%;filter: drop-shadow(3px 2px 2px #959294)}
+	
+	.interactive .topbox{margin-left: -390px;margin-top: 50px}
+	.interactive .topbox .box {margin-left: -240px}	
+	.interactive .botbox{margin-left: 0px;margin-top: -200px}
+	.interactive .botbox .box {margin-left: -240px}
+	
+	
+	.end{margin-left: -170px;height: 800px;margin-top: -500px}
+	.end .bigimg{animation: none;transition: none;}
+	.end .bigimg img{width: auto; height: auto; 
+		max-width: 200px; max-height: 200px;}
+	.end .endtext{margin-top: 80px;margin-left:-630px;}
+	.end .endtext .icon img{width: 60%}
+	.end .endtext .ptext p{font-size: 7px;margin-top:-2px;margin-left: -10px}
+	
+	
+
+	#lypopweb{left: 260px;top:22%;}
+	#lypopweb .lypopwebcont{}
+	#lypopweb img{width: 30%; height: 30%;z-index: 100}
+	#lypopweb .close{left: 5%;top: 50px;z-index: 10000}
+	
+	
+	
+	#lypopweb2{left: -365px;top: 22%;}
+	#lypopweb2 .lypopwebcont{}
+	#lypopweb2 img{width: 30%; height: 30%;z-index: 100}
+	#lypopweb2 .close{left: 5%;top: 50px;z-index: 10000}
+	
+	#lypopweb2 .bg{margin-left:365px;margin-top: -150px}
+	
+	
+	
+	#lypopb01 {}
+	#lypopb01 img {width: 40%;}
+	#lypopb01 .lypopb01cont{margin-top: 150px;left: 620px}
+	#lypopb01 .close{top: 130px; left: 300px;width: 50%}
+	#lypopb01 .swiper-button-next{display: none}
+	#lypopb01 .swiper-button-prev{display: none}
+	#lypopb01 .swiper-slide{margin-right: -730px}
+	
+	
+	#lypopb02 {}
+	#lypopb02 img {width: 40%;}
+	#lypopb02 .lypopb02cont{margin-top: 150px;left: 620px}
+	#lypopb02 .close{top: 130px; left: 300px;width: 50%}
+	#lypopb02 .swiper-button-next{display: none}
+	#lypopb02 .swiper-button-prev{display: none}
+	#lypopb02 .swiper-slide{margin-right: -730px}
+	
+	#lypopb03 {}
+	#lypopb03 img {width: 40%;}
+	#lypopb03 .lypopb03cont{margin-top: 150px;left: 620px}
+	#lypopb03 .close{top: 130px; left: 300px;width: 50%}
+	#lypopb03 .swiper-button-next{display: none}
+	#lypopb03 .swiper-button-prev{display: none}
+	#lypopb03 .swiper-slide{margin-right: -730px}
+
+	
+	/*artwork*/
+	
+
+	#lypop01 {}
+	#lypop01 img {width: 40%;}
+	#lypop01 .lypop01cont{margin-top: -100px;left:250px}
+	#lypop01 .lypop01cont .swiper-wrapper .swiper-slide{background-color: rgba( 255, 255, 255, 0.1 );}
+	#lypop01 .close{top: 135px; left: 290px;z-index: 100}
+	#lypop01 .bg{opacity: 30%;}
+	#lypop01 .swiper-slide{margin-right: -730px}
+	
+	#lypop02 {}
+	#lypop02 img {width: 30%;}
+	#lypop02 .lypop02cont{margin-top: 150px;left: 625px}
+	#lypop02 .close{top: 130px; left: 290px;z-index: 100}
+	#lypop02 .bg{width: 100%;height: 100%}
+	
+	#lypop03 {}
+	#lypop03 .lypop03cont .simg {background-size:40%;width: 100%;height: 100vw}
+	#lypop03 .lypop03cont .simg img {width:60%;}
+	#lypop03 .lypop03cont{margin-top: 0px;left: 0px}
+	#lypop03 .lypop03cont p {font-size: 10px;margin-bottom: -20px}
+	#lypop03 .close{top: 110px; left: 290px;z-index: 100}
+	#lypop03 .bg{width: 100%;height: 100%}
+	
+	#lypop04 {}
+	#lypop04 .lypop04cont .simg {background-size:40%;width: 100%;height: 100vw}
+	#lypop04 .lypop04cont .simg img {width:60%;}
+	#lypop04 .lypop04cont{margin-top: 0px;left: 0px}
+	#lypop04 .lypop04cont p {font-size: 10px;margin-bottom: -20px}
+	#lypop04 .close{top: 110px; left: 290px;z-index: 100}
+	#lypop04 .bg{width: 100%;height: 100%}
+	
+	#lypop05 {}
+	#lypop05 img {width: 40%;}
+	#lypop05 .lypop05cont{margin-top: -100px;left:250px}
+	#lypop05 .lypop05cont .swiper-wrapper .swiper-slide{background-color: rgba( 255, 255, 255, 0.1 );}
+	#lypop05 .close{top: 135px; left: 290px;z-index: 100}
+	#lypop05 .bg{opacity: 30%;}
+	#lypop05 .swiper-slide{margin-right: -730px}
+	
+	#lypop06 {}
+	#lypop06 .lypop06cont .simg {background-size:40%;width: 100%;height: 100vw}
+	#lypop06 .lypop06cont .simg img {width:60%;}
+	#lypop06 .lypop06cont{margin-top: 0px;left: 0px}
+	#lypop06 .lypop06cont p {font-size: 10px;margin-bottom: -20px}
+	#lypop06 .close{top: 110px; left: 290px;z-index: 100}
+	#lypop06 .bg{width: 100%;height: 100%}
+
+
+	
+
+}
